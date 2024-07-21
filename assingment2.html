@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+       
+        .form-select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+        }
+        .pizza-size label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .addtoppings label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn-order {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-order:hover {
+            background-color: #45a049;
+        }
+        .header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Pizza Order</h2>
+        </div>
+
+        <div>
+            <h4>Pizzas</h4>
+            <select class="form-select">
+                <option selected disabled>Select a pizza</option>
+                <option value="2">Hawaiian</option>
+                <option value="3">Seafood</option>
+                <option value="4">Double cheese</option>
+                <option value="5">Double Pepperoni</option>
+            </select>
+        </div>
+
+        <div class="pizza-size">
+            <h4>Pizza Size</h4>
+            <label>
+                <input type="radio" name="size" value="small">
+                Small (12 inch)
+            </label>
+            <label>
+                <input type="radio" name="size" value="medium">
+                Medium (14 inch)
+            </label>
+            <label>
+                <input type="radio" name="size" value="large">
+                Large (16 inch)
+            </label>
+        </div>
+
+        <div>
+            <h4>Add Toppings</h4>
+            <div class="addtoppings">
+                <label>
+                    <input type="checkbox" name="additional" value="Cheese">
+                    Cheese
+                </label>
+                <label>
+                    <input type="checkbox" name="additional" value="Sausage">
+                    Sausage
+                </label>
+                <label>
+                    <input type="checkbox" name="additional" value="Mushroom">
+                    Mushroom
+                </label>
+                <label>
+                    <input type="checkbox" name="additional" value="Shrimp">
+                    Shrimp
+                </label>
